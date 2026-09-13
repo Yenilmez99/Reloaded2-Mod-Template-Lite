@@ -1,0 +1,21 @@
+{
+  "ModId": "reloaded.mod.template",
+  "ModName": "Mod Name",
+  "ModAuthor": "Mod Author",
+  "ModVersion": "1.0.0",
+  "ModDescription": "Description",
+  "ModDll": "MyModConfigurator.dll",
+  "ModIcon": "Preview.png",
+  "ModR2RManagedDll32": "x86/MyModConfigurator.dll",
+  "ModR2RManagedDll64": "x64/MyModConfigurator.dll",
+  "ModNativeDll32": "ModCXX_Output.dll",
+  "ModNativeDll64": "",
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "MyModConfigurator.json",
+  "PluginData": {},
+  "IsUniversalMod": false,
+  "ModDependencies": [ "reloaded.sharedlib.hooks" ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [],
+  "ProjectUrl": ""
+}
