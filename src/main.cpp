@@ -4,9 +4,9 @@
 DWORD WINAPI MainCore(LPVOID lpParam) {
     HMODULE myHModule = reinterpret_cast<HMODULE>(lpParam);
 
-    // Your Mod starts here
+    // Your DLL Mod starts here
     while (!(GetAsyncKeyState(VK_F1)&0x1)) {
-        Sleep(100);
+        Sleep(16); // 60fps
     }
 
     return 0;
