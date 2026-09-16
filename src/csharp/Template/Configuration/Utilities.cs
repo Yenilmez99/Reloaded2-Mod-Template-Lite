@@ -1,5 +1,4 @@
-﻿#if (IncludeConfig)
-using System.Diagnostics;
+﻿using System.Diagnostics;
 
 namespace Reloaded.Mod.Template.Template.Configuration;
 
@@ -39,4 +38,3 @@ public class Utilities
         return value;
     }
 }
-#endif

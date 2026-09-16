@@ -1,8 +1,6 @@
 ﻿using Reloaded.Mod.Interfaces;
 using IReloadedHooks = Reloaded.Hooks.ReloadedII.Interfaces.IReloadedHooks;
-#if (IncludeConfig)
 using Reloaded.Mod.Template.Configuration;
-#endif
 
 namespace Reloaded.Mod.Template.Template;
 
@@ -26,13 +24,11 @@ public class ModContext
     /// </summary>
     public ILogger Logger { get; set; } = null!;
 
-#if (IncludeConfig)
     /// <summary>
     /// Provides access to this mod's configuration.
     /// </summary>
     public Config Configuration { get; set; } = null!;
 
-#endif
     /// <summary>
     /// Configuration of this mod.
     /// </summary>

@@ -1,6 +1,4 @@
-﻿#if (IncludeConfig)
-using Reloaded.Mod.Template.Configuration;
-#endif
+﻿using Reloaded.Mod.Template.Configuration;
 
 namespace Reloaded.Mod.Template.Template;
 
@@ -64,11 +62,9 @@ public class ModBase
         */
     }
 
-#if (IncludeConfig)
     public virtual void ConfigurationUpdated(Config configuration)
     {
         // Apply settings from configuration.
         // ... your code here.
     }
-#endif
 }

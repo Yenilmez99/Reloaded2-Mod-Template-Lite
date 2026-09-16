@@ -1,9 +1,7 @@
 ﻿using Reloaded.Hooks.ReloadedII.Interfaces;
 using Reloaded.Mod.Interfaces;
 using Reloaded.Mod.Template.Template;
-#if (IncludeConfig)
 using Reloaded.Mod.Template.Configuration;
-#endif
 //-:cnd:noEmit
 #if DEBUG
 using System.Diagnostics;
@@ -38,13 +36,11 @@ public class Mod : ModBase // <= Do not Remove.
     /// </summary>
     private readonly IMod _owner;
 
-#if (IncludeConfig)
     /// <summary>
     /// Provides access to this mod's configuration.
     /// </summary>
     private Config _configuration;
 
-#endif
     /// <summary>
     /// The configuration of the currently executing mod.
     /// </summary>
@@ -56,9 +52,7 @@ public class Mod : ModBase // <= Do not Remove.
         _hooks = context.Hooks;
         _logger = context.Logger;
         _owner = context.Owner;
-#if (IncludeConfig)
         _configuration = context.Configuration;
-#endif
         _modConfig = context.ModConfig;
 
 //-:cnd:noEmit
@@ -77,7 +71,6 @@ public class Mod : ModBase // <= Do not Remove.
         // TODO: Implement some mod logic
     }
 
-#if (IncludeConfig)
     #region Standard Overrides
     public override void ConfigurationUpdated(Config configuration)
     {
@@ -87,7 +80,6 @@ public class Mod : ModBase // <= Do not Remove.
         _logger.WriteLine($"[{_modConfig.ModId}] Config Updated: Applying");
     }
     #endregion
-#endif
 
     #region For Exports, Serialization etc.
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.

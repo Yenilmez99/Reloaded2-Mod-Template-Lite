@@ -1,5 +1,4 @@
-﻿#if (IncludeConfig)
-using Reloaded.Mod.Interfaces;
+﻿using Reloaded.Mod.Interfaces;
 using System.ComponentModel;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -142,4 +141,3 @@ public class Configurable<TParentType> : IUpdatableConfigurable where TParentTyp
         return result;
     }
 }
-#endif

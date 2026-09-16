@@ -1,5 +1,4 @@
-﻿#if (IncludeConfig)
-using Reloaded.Mod.Interfaces;
+﻿using Reloaded.Mod.Interfaces;
 using Reloaded.Mod.Template.Configuration;
 
 namespace Reloaded.Mod.Template.Template.Configuration;
@@ -96,4 +95,3 @@ public class Configurator : IConfiguratorV3
     /// </summary>
     public void SetModDirectory(string modDirectory) { ModFolder = modDirectory; }
 }
-#endif

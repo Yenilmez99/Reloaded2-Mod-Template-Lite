@@ -1,5 +1,4 @@
-﻿#if (IncludeConfig)
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using Reloaded.Mod.Template.Template.Configuration;
 using Reloaded.Mod.Interfaces.Structs;
 using System.ComponentModel.DataAnnotations;
@@ -128,4 +127,3 @@ public class ConfiguratorMixin : ConfiguratorMixinBase
 {
     // 
 }
-#endif

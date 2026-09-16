@@ -1,5 +1,4 @@
-﻿#if (IncludeConfig)
-using Reloaded.Mod.Interfaces;
+﻿using Reloaded.Mod.Interfaces;
 using Reloaded.Mod.Template.Configuration;
 
 namespace Reloaded.Mod.Template.Template.Configuration;
@@ -53,4 +52,3 @@ public class ConfiguratorMixinBase
     }
     #endregion
 }
-#endif
